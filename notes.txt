@@ -1,0 +1,26 @@
+ Computer / Mobile --> Req* --> Server;
+
+ Computer / Mobile <-- Res(Express) <-- Server;
+
+ Req = GET request from Machine (This is subjective topic );
+
+ For node project setup run "npm init";
+
+ node will ask questions regarding the project fill and see your project setup is completed;
+
+ now go to package.json file and add start script in script object of package.json "start":"node index.js",
+ by using this you can start your project by using "npm run start" instade of using "node index.js";
+
+install express by using "npm i express";
+
+do basic setup for express app and make a const for port where app will be listen req here it is 5000;
+
+for app's confidenctial variables use "dotenv" package and initiate in index.js file by using "require(dotenv).config()";
+
+for example purposes we have created .env file and defined "PORT = 5000";
+
+for access of that variable used "process.enc.PORT" 
+
+    example :--> app.listen(process.env.PORT, () => {
+                 console.log(`Example app listening on port ${process.env.PORT}!`);
+                });
